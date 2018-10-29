@@ -12,13 +12,14 @@
 
 <form>
     
+    <div id="laite">
     Mitä laitetta/laitteita käytät pääasiassa koulutehtävien tekemiseen?:<br>
     <input type="checkbox" name="kysymys1" value="kannettava">Kannettava tietokone<br>
-    <input type="checkbox" name="kysymys1" value="kannettavavdi"> Kannettavan tietokoneen kautta VDI:llä<br>
+    <input type="checkbox" name="kysymys1" value="kannettavavdi">Kannettavan tietokoneen kautta VDI:llä<br>
     <input type="checkbox" name="kysymys1" value="tabletti">Tabletti<br>
     <input type="checkbox" name="kysymys1" value="koulun">Koulun kone<br>
     <input type="checkbox" name="kysymys1" value="poytakone">Pöytäkone kotona
-    <br><br>
+    </div>
 
     Minkä merkkinen laite/laitteet ovat?:<br>
     <input type="text" name="kysymys2">
@@ -32,11 +33,16 @@
     <input type="text" name="kysymys4">
     <br><br>
 
-    Onko ohjeistus riittävä, jos käyttää muita kuin suositeltuja laitteita?<br>
-    <input type="radio" name="kysymys5" value="kylla">Kyllä<br>
-    <input type="radio" name="kysymys5" value="ei">Ei
+    Onko ohjeistus riittävä laitteelle jota käytät?<br>
+    1. täysin eri mieltä 2. jokseenkin eri mieltä 3. ei samaa eikä eri mieltä 4. jokseenkin samaa mieltä 5. täysin samaa mieltä <br>
+    <input type="radio" name="kysymys5" value="1">1 
+    <input type="radio" name="kysymys5" value="2">2 
+    <input type="radio" name="kysymys5" value="3">3 
+    <input type="radio" name="kysymys5" value="4">4 
+    <input type="radio" name="kysymys5" value="5">5
     <br><br>
 
+    <!--testi-->
     <input type="submit">
 
 </form>
