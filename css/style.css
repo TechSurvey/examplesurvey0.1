@@ -1,7 +1,3 @@
-div {
-    width: 10 px;
-}
-
 h1 {
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 30px;
@@ -17,19 +13,28 @@ button {
     font-size: 15px;
     border-radius: 2px;
     background-color: #70c3ee;
-    border: 2px solid rgba(0, 121, 194, 0.65);
     color: black;
     padding: 10px;
     text-align: center;
     display: inline-block;
     margin: 4px 2px;
     cursor: pointer;
+    border: 2px solid rgba(0, 121, 194, 0.65);
+    width: 90px;
 }
 
 #laheta {
     background-color: #70c3ee;
 }
 
-div {
-    border-radius: 2px;
+.kaikki {
+    border: none;
+    position: absolute;
+    top: 70px;
+    width: 100%;
+}
+
+.seuraava {
+    position: absolute;
+    top: 180px;
 }
