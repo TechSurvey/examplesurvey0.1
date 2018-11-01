@@ -17,104 +17,120 @@
     <script>
     $(document).ready(function(){
         $("#edellinen1").click(function(){
-            $("#2").hide('slow');
-            $("#1").show('slow');
+            $("#2").hide();
+            $("#1").show();
             });
             })
     $(document).ready(function(){
         $("#seuraava1").click(function(){
-            $("#2").show('slow');
-            $("#1").hide('slow');
+            $("#2").show();
+            $("#1").hide();
             });
             });
 
             $(document).ready(function(){
         $("#edellinen2").click(function(){
-            $("#3").hide('slow');
-            $("#2").show('slow');
+            $("#3").hide();
+            $("#2").show();
             });
             })
     $(document).ready(function(){
         $("#seuraava2").click(function(){
-            $("#3").show('slow');
-            $("#2").hide('slow');
+            $("#3").show();
+            $("#2").hide();
             });
             });
 
             $(document).ready(function(){
         $("#edellinen3").click(function(){
-            $("#4").hide('slow');
-            $("#3").show('slow');
+            $("#4").hide();
+            $("#3").show();
             });
             })
     $(document).ready(function(){
         $("#seuraava3").click(function(){
-            $("#4").show('slow');
-            $("#3").hide('slow');
+            $("#4").show();
+            $("#3").hide();
             });
             });
 
             $(document).ready(function(){
         $("#edellinen4").click(function(){
-            $("#5").hide('slow');
-            $("#4").show('slow');
+            $("#5").hide();
+            $("#4").show();
             });
             })
     $(document).ready(function(){
         $("#seuraava4").click(function(){
-            $("#5").show('slow');
-            $("#4").hide('slow');
+            $("#5").show();
+            $("#4").hide();
             });
             });
 </script>
 
     <h1>Haaga-Helia laitekysely</h1>
-
-    <div id="1">
+    <div class="kaikki" id="1">
     <p>Mitä laitetta/laitteita käytät pääasiassa koulutehtävien tekemiseen?</p>
     <p><input type="checkbox" name="kysymys1" value="kannettava">Kannettava tietokone<br>
     <input type="checkbox" name="kysymys1" value="kannettavavdi">Kannettavan tietokoneen kautta VDI:llä<br>
     <input type="checkbox" name="kysymys1" value="tabletti">Tabletti<br>
     <input type="checkbox" name="kysymys1" value="koulun">Koulun kone<br>
     <input type="checkbox" name="kysymys1" value="poytakone">Pöytäkone kotona<br><br>
+
+</p>
+
+    <div class="seuraava">
     <button id="seuraava1">Seuraava</button>
-    </p>
+</div>
+
     </div>
 
     <br>
 
-    <div id="2" hidden>
+    <div  class="kaikki" id="2" hidden>
     <p>Minkä merkkinen laite/laitteet ovat?</p>
     <input type="text" name="kysymys2"><br><br>
 
+    <div class="seuraava">
+
     <button id="edellinen1">Edellinen</button>
     <button id="seuraava2">Seuraava</button>
+
+</div>
 
     </div>
     
     <br>
 
-    <div id="3" hidden>
+    <div  class="kaikki" id="3" hidden>
     <p>Pystytkö käyttämään koulun vaatimia ohjelmistoja koneella?</p>
     <input type="text" name="kysymys3"><br><br>
+
+    <div class="seuraava">
 
     <button id="edellinen2">Edellinen</button>
     <button id="seuraava3">Seuraava</button>
 
     </div>
+
+    </div>
     <br>
 
-    <div id="4" hidden>
+    <div  class="kaikki" id="4" hidden>
     <p>Pystytkö käyttämään Peppiä laitteella ongelmitta?</p>
     <input type="text" name="kysymys4"><br><br>
+
+    <div class="seuraava">
 
     <button id="edellinen3">Edellinen</button>
     <button id="seuraava4">Seuraava</button>
 
     </div>
+
+    </div>
     <br>
 
-    <div id="5" hidden>
+    <div  class="kaikki" id="5" hidden>
     <p>Onko ohjeistus riittävä laitteelle jota käytät?</p>
     <p>1. täysin eri mieltä 2. jokseenkin eri mieltä 3. ei samaa eikä eri mieltä 4. jokseenkin samaa mieltä 5. täysin samaa mieltä</p>
 
@@ -125,13 +141,16 @@
     <input type="radio" name="kysymys5" value="5">5</p>
     <br>
 
+    <div class="seuraava">
+
     <button id="edellinen4">Edellinen</button>
+
+    <button id="laheta">Lähetä</button>
+
+    </div>
     </div>
 
     <br>
-
-    <!--testi-->
-    <input type="submit">
     
 </body>
 </html>
